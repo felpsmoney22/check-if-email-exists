@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  reacher:
+    image: reacherhq/backend:latest
+    container_name: reacher
+    ports:
+      - "8080:8080"
+    environment:
+      - RCH_ENABLE_BULK=true
+      - RUST_LOG=info
+    restart: always
