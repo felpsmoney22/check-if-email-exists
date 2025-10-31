@@ -10,3 +10,4 @@ services:
       - RCH_ENABLE_BULK=true
       - RUST_LOG=info
     restart: always
+    network_mode: bridge  
